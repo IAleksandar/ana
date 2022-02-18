@@ -26,7 +26,7 @@ namespace Task1
                 return "Too many elements!";
             }
             else if (number.Contains('-'))
-                return "Negative not allowed: " + CheckNegative(num);
+                return "Negative not allowed:" + CheckNegative(num);
             else
             {
                 for (int i = 0; i < num.Count; i++)
@@ -58,7 +58,7 @@ namespace Task1
                 if (success && tmp < 0)
                 {
                     if (!string.IsNullOrEmpty(negative))
-                        negative += ", ";
+                        negative += ",";
                     negative += i.ToString();
                 }
             }
